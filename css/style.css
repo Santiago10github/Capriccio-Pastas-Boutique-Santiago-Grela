@@ -338,9 +338,6 @@ nav{
 }
 
 @media screen and (max-width: 400px){
-    .main__pastas{
-        height: 390vh;
-    }
     .grid__pastas{
         display: grid;
         grid-template-columns: repeat(1,1fr);
@@ -481,9 +478,6 @@ nav{
 }
 
 @media screen and (max-width: 400px){
-    .main__locales{
-        height: 290vh;
-    }
     .section__locales{
         display: flex;
         flex-direction: column;
@@ -697,9 +691,6 @@ nav{
 }
 
 @media screen and (max-width: 400px){
-    .main__nosotros{
-        height: 215vh;
-    }
     .fondo__nosotros{
         display: none;
     }
@@ -843,9 +834,6 @@ nav{
 }
 
 @media screen and (max-width: 400px){
-    .main__contactanos{
-        height: 75vh;
-    }
     .fondo__contactanos{
         display: none;
     }
