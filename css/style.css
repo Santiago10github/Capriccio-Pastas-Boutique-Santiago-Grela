@@ -293,9 +293,37 @@ nav{
 /* Pastas */
 
 .body__pastas{
-    background: rgb(255,202,202);
-    background: linear-gradient(90deg, rgba(255,202,202,1) 10%, rgba(255,255,255,1) 75%);
+    /* background: rgb(255,202,202);
+    background: linear-gradient(90deg, rgba(255,202,202,1) 10%, rgba(255,255,255,1) 75%); */
     font-family: 'Roboto', sans-serif;
+}
+
+.mydiv{
+    position: fixed;
+    top: 0%;
+    z-index: -1;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 45px;
+    font-weight: bold;
+    background: linear-gradient(150deg, #ff0000, #16f102, #ffff00, #0602eb);
+    background-size: 400% 100%;
+    animation: BGgradient 5s ease infinite;
+}
+
+@keyframes BGgradient{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
 }
 
 .grid__pastas{
@@ -384,11 +412,40 @@ nav{
     z-index: -1;
 }
 
+.conocenos__locales{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mydiv__locales{
+    margin-top: 100px;
+    width: 300px;
+    height: 100px;
+    background: #ffcaca;
+    border-radius: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 2s;
+}
+
+.mydiv__locales:hover{
+    width: 400px;
+    height: 200px;
+    font-size: 40px;
+    margin-top: 125px;
+}
+
 .section__locales{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
 .div__locales{
@@ -671,18 +728,42 @@ nav{
     color: #ffff00;
     font-size: 50px;
     font-weight: bold;
+    position: relative;
+    animation: palabras 5s linear infinite;
 }
 
 .grid__p__pastas{
     color: #505050;
     font-size: 50px;
     font-weight: bold;
+    position: relative;
+    animation: palabras 5s linear infinite;
 }
 
 .grid__p__boutique{
     color: #ffcaca;
     font-size: 50px;
     font-weight: bold;
+    position: relative;
+    animation: palabras 5s linear infinite;
+}
+
+@keyframes palabras{
+    0%{
+        transform: rotateY(0deg) translateX(0px);
+    }
+    25%{
+        transform: rotateY(360deg) translateX(100px)
+    }
+    50%{
+        transform: rotateY(0deg) translateX(0px);
+    }
+    75%{
+        transform: rotateY(-360deg) translateX(-100px);
+    }
+    100%{
+        transform: rotateY(0deg) translateX(0px);
+    }
 }
 
 .grid__nosotros img{
@@ -788,6 +869,7 @@ nav{
 
 .body__contactanos{
     font-family: 'Roboto', sans-serif;
+    background: #050505;
 }
 
 .grid__contactanos{
@@ -831,6 +913,79 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.contenedor__cube{
+    display: flex;
+    justify-content: center;
+}
+
+.cube{
+    
+    margin-top: 200px;
+    margin-bottom: 200px;
+    position: relative;
+    width: 300px;
+    height: 300px;
+    transform-style: preserve-3d;
+    transform: rotateX(-30deg);
+    animation: animate 4s linear infinite;
+}
+
+@keyframes animate{
+    0%{
+        transform: rotateX(-30deg) rotateY(0deg);
+    }
+    100%{
+        transform: rotateX(-30deg) rotateY(360deg);
+    }
+}
+
+.cube div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+}
+
+.cube div span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#050505, #ffff00, #00ff00, #ff0000);
+    transform: rotateY(calc(90deg * var(--i))) translateZ(150px);
+    /* 300/2=150 */
+}
+
+.top{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 300px;
+    background: rgb(10, 10, 10);
+    transform: rotateX(90deg) translateZ(145px);
+}
+
+.top:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(#ff0000 40%, #00ff00 70%, #ffff00 80%);
+    transform: translateZ(-380px);
+    filter: blur(20px);
+    box-shadow: 0 0 120px rgba(251, 255, 0, 0.2),
+    0 0 120px rgba(251, 255, 0, 0.4),
+    0 0 120px rgba(251, 255, 0, 0.6),
+    0 0 120px rgba(251, 255, 0, 0.8),
+    0 0 120px rgba(251, 255, 0, 1);
 }
 
 @media screen and (max-width: 400px){
