@@ -869,7 +869,7 @@ nav{
 
 .body__contactanos{
     font-family: 'Roboto', sans-serif;
-    background: #050505;
+    background: linear-gradient(0deg, #ffff, #000)/* #050505 */;
 }
 
 .grid__contactanos{
@@ -903,10 +903,14 @@ nav{
     padding-left: 50px;
     padding-right: 50px;
     padding-bottom: 20px;
-    font-size: 35px;
+    font-size: 20px;
     border: solid 5px #ffcaca;
     border-radius: 10px;
     width: 500px;
+}
+
+.form__contactanos{
+    width: 400px;
 }
 
 .botones__formulario{
@@ -1035,3 +1039,41 @@ nav{
 }
 
 /*  */
+
+/* Bootstrap Navbar */
+
+.navbar{
+    width: 100%;
+    background: #50505085;
+}
+
+.collapse{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+.nav-item{
+    padding-right: 40px;
+}
+
+.nav-link{
+    color: #ffff00;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.navbar-brand{
+    color: #ffff00;
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 40px;
+}
+
+.nav-link:hover{
+    color: #ffcaca;
+}
+
+.navbar-brand:hover{
+    color: #ffcaca;
+}
