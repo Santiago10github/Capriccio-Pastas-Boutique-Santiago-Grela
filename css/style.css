@@ -992,6 +992,25 @@ nav{
     align-items: center;
 }
 
+.collapse__contactanos{
+    display: flex;
+    justify-content: center;
+}
+
+.boton__contactanos{
+    height: 100px;
+    width: 400px;
+    font-size: 30px;
+}
+
+.card-body{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+
 .contenedor__cube{
     display: flex;
     justify-content: center;
