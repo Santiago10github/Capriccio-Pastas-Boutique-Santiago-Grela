@@ -576,6 +576,20 @@ nav{
     margin-left: 10px;
 }
 
+.boton__locales{
+    height: 100px;
+    width: 400px;
+    font-size: 30px;
+    border-radius: 20px;
+}
+
+.modal__locales{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 30px;
+}
+
 @media screen and (max-width: 400px){
     .section__locales{
         display: flex;
@@ -788,6 +802,23 @@ nav{
     font-weight: bold;
     position: relative;
     animation: palabras 5s linear infinite;
+}
+
+.canvas__nosotros{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.boton__canvas{
+    height: 100px;
+    width: 300px;
+    font-size: 20px;
+}
+
+.offcanvas-body img{
+    height: 300px;
+    width: 350px;
 }
 
 @keyframes palabras{
