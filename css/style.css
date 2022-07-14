@@ -654,7 +654,7 @@ h1{
 
 .body__nosotros{
     font-family: 'Roboto', sans-serif;
-    background: linear-gradient(0deg, rgb(255, 250, 202) 10%, rgba(255,255,255,1) 75%);
+    background: linear-gradient(0deg, rgb(255, 250, 202) 10%, rgb(120, 160, 255) 75%);
 }
 
 .fondo__nosotros{
@@ -664,6 +664,38 @@ h1{
     right: 0%;
     top: 0%;
     z-index: -1;
+}
+
+#circulo{
+    width: 100px;
+    height: 100px;
+    margin-top: 50px;
+    border-radius: 50px;
+    background: #000;
+    animation: mianimacion;
+    animation-duration: 4s;
+    position: relative;
+    animation-direction: reverse;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes mianimacion{
+    0%{
+        background: #000; left: 0px;
+    }
+    25%{
+        background: #ff0000; left: 705px;
+    }
+    50%{
+        background: #008000; left: 1410px;
+    }
+    75%{
+        background: #ffff00; left: 705px;
+    }
+    100%{
+        background: #0000ff; left: 0px;
+    }
 }
 
 .h2__nosotros{
@@ -780,6 +812,27 @@ h1{
     .body__nosotros{
         background: rgb(255,202,202);
         background: linear-gradient(90deg, rgba(255,202,202,1) 10%, rgba(255,255,255,1) 75%);
+    }
+    #circulo{
+        width: 30px;
+        height: 30px;
+    }
+    @keyframes mianimacion{
+        0%{
+            background: #000; left: 0px;
+        }
+        25%{
+            background: #ff0000; left: 145px;
+        }
+        50%{
+            background: #008000; left: 290px;
+        }
+        75%{
+            background: #ffff00; left: 145px;
+        }
+        100%{
+            background: #0000ff; left: 0px;
+        }
     }
     .h2__nosotros{
         width: fit-content;
