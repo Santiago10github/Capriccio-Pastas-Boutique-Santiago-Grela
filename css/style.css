@@ -1121,6 +1121,9 @@ nav{
     .collapse__contactanos{
         display: none;
     }
+    .contenedor__cube{
+        margin-top: 30px;
+    }
     .cube{
         margin-top: 100px;
         margin-bottom: 100px;
