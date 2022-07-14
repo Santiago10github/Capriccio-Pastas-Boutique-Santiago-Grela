@@ -21,47 +21,41 @@ h1{
 }
 
 
-/* Header y Nav del sitio web */
+/* Bootstrap Navbar */
 
-.header{
+.navbar{
     width: 100%;
     background: #50505085;
-    height: 75px;
+}
+
+.collapse{
     display: flex;
-    border-bottom: solid 2px #505050;
-}
-
-.header__logo{
-    width: 30%;
-}
-
-.logo{
-    object-fit: contain;
-    height: 90%;
-    margin: 3px 75px;
-}
-
-nav{
-    width: 70%;
-    display: flex;
+    flex-direction: row;
     justify-content: end;
-    align-items: center;
-    padding-right: 50px;
 }
 
-.li__header{
-    display: inline-block;
-    padding-right: 70px;
+.nav-item{
+    padding-right: 40px;
 }
 
-
-.link__header{
-    text-decoration: none;
+.nav-link{
     color: #ffff00;
+    font-size: 15px;
+    font-weight: bold;
 }
 
-.link__header:hover{
-    text-decoration: none;
+.navbar-brand{
+    color: #ffff00;
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 40px;
+}
+
+.nav-link:hover{
+    color: #ffcaca;
+}
+
+.navbar-brand:hover{
     color: #ffcaca;
 }
 
@@ -1147,41 +1141,3 @@ nav{
 }
 
 /*  */
-
-/* Bootstrap Navbar */
-
-.navbar{
-    width: 100%;
-    background: #50505085;
-}
-
-.collapse{
-    display: flex;
-    flex-direction: row;
-    justify-content: end;
-}
-
-.nav-item{
-    padding-right: 40px;
-}
-
-.nav-link{
-    color: #ffff00;
-    font-size: 15px;
-    font-weight: bold;
-}
-
-.navbar-brand{
-    color: #ffff00;
-    font-size: 20px;
-    font-weight: bold;
-    padding-left: 40px;
-}
-
-.nav-link:hover{
-    color: #ffcaca;
-}
-
-.navbar-brand:hover{
-    color: #ffcaca;
-}
