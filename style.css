@@ -62,7 +62,7 @@ h1{
 /* Index */
 
 .body__index{
-    background: url(../imagenes/banner.jpeg) no-repeat;
+    background: url(./imagenes/banner.jpeg) no-repeat;
     background-color: #ffcaca;
     font-family: 'Roboto', sans-serif;
 }
@@ -798,6 +798,7 @@ h1{
 .offcanvas-body img{
     height: 300px;
     width: 350px;
+    padding-bottom: 20px;
 }
 
 .grid__nosotros img{
