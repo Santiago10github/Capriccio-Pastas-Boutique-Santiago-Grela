@@ -1,0 +1,80 @@
+.body__pastas{
+    background: rgb(255,202,202);
+    background: linear-gradient(90deg, rgba(255,202,202,1) 10%, rgba(255,255,255,1) 75%);
+    font-family: 'Roboto', sans-serif;
+}
+
+.grid__pastas{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 200px 50px;
+    padding: 0px 50px;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 100px;
+
+    &__item{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    img{
+        height: 400px;
+        width: 400px;
+        margin-top: 100px;
+        border: solid 10px $color-oscuro;
+        background-color: $color-oscuro;
+        border-radius: 10px;
+    }
+
+    p{
+        margin-top: 10px;
+        width: 300px;
+        background-color: $color-claro;
+        border: solid 1px $color-oscuro;
+        border-radius: 10px;
+        padding: 5px;
+        font-weight: bold;
+    }
+}
+
+.accordion-item{
+    background: none;
+}
+
+.accordion-button{
+    background: #505050;
+    color: $color-principal;
+}
+
+@media screen and (max-width: 400px){
+    .grid__pastas{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 0px 50px;
+        padding: 0px 50px;
+        justify-content: center;
+        align-content: center;
+
+        img{
+            height: 200px;
+            width: 200px;
+            border: solid 10px $color-oscuro;
+            background-color: $color-oscuro;
+            border-radius: 10px;
+        }
+
+        p{
+            margin-top: 10px;
+            width: 150px;
+            background-color: $color-claro;
+            border: solid 1px $color-oscuro;
+            border-radius: 10px;
+            padding: 5px;
+            font-weight: bold;
+            font-size: 10px;
+        }
+    }
+}

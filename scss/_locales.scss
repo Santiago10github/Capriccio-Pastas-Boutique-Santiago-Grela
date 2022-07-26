@@ -1,0 +1,235 @@
+.body__locales{
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(90deg, rgb(205, 255, 255) 10%, rgba(255,255,255,1) 75%);
+}
+
+.conocenos__locales{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    div{
+        margin-top: 100px;
+        width: 300px;
+        height: 100px;
+        background: $color-principal;
+        border-radius: 10px;
+        font-size: 25px;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 2s;
+
+        &:hover{
+            width: 400px;
+            height: 200px;
+            font-size: 40px;
+            margin-top: 125px;
+        }
+    }
+}
+
+.section__locales{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.div__locales{
+    width: 100%;
+    height: 0%;
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
+.img__locales{
+    width: 600px;
+    height: 400px;
+    margin-top: 30px;
+    border: dotted 10px $color-principal;
+}
+
+.h2__locales{
+    width: fit-content;
+    background-color: $color-claro;
+    border: solid 3px $color-oscuro;
+    border-radius: 10px;
+    margin: 15px auto;
+}
+
+.h3__locales{
+    margin: 0 auto;
+    background-color: $color-secundario;
+    border: solid 1px $color-oscuro;
+    border-radius: 10px;
+    width: fit-content;
+}
+
+.h3__horarios{
+    width: fit-content;
+    background-color: $color-claro;
+    margin-top: 20px;
+    border: solid 2px $color-oscuro;
+    border-radius: 10px;
+    margin-left: 60px;
+}
+
+.grid__locales{
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    justify-content: center;
+    align-content: center;
+
+    &__item{
+        border: solid 3px $color-oscuro;
+        border-radius: 3px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.grid__locales__itinerario{
+    height: 85px;
+    background-color: $color-principal;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.grid__locales__dias{
+    height: 50px;
+    background-color: $color-claro;
+    font-style: italic;
+}
+
+.grid__locales__telefono{
+    margin-top: 20px;
+    background-color: $color-secundario;
+    font-weight: bold;
+}
+
+.mapa__locales{
+    width: 600px;
+    height: 200px;
+    margin-top: 100px;
+    margin-left: 10px;
+}
+
+.boton__locales{
+    height: 100px;
+    width: 400px;
+    font-size: 30px;
+    border-radius: 20px;
+}
+
+.modal__locales{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+@media screen and (max-width: 400px){
+    .mydiv__locales{
+        width: 250px;
+        height: 50px;
+        font-size: 20px;
+    }
+    .mydiv__locales:hover{
+        display: none;
+    }
+    .section__locales{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 300vh;
+        margin-top: 0px;
+    }
+    .div__locales{
+        margin-top: 30px;
+        width: 320px;
+        height: 50%;
+        padding-left: 0%;
+        padding-right: 0%;
+    }
+    .img__locales{
+        width: 320px;
+        height: 250px;
+        margin-top: 30px;
+        border: dotted 10px $color-principal;
+    }
+    .h2__locales{
+        width: fit-content;
+        background-color: $color-claro;
+        border: solid 3px $color-oscuro;
+        border-radius: 10px;
+        font-size: 15px;
+    }
+    .h3__locales{
+        background-color: $color-secundario;
+        border: solid 1px $color-oscuro;
+        border-radius: 10px;
+        width: fit-content;
+        font-size: 10px;
+    }
+    .h3__horarios{
+        width: fit-content;
+        background-color: $color-claro;
+        margin-top: 20px;
+        border: solid 2px $color-oscuro;
+        border-radius: 10px;
+        margin-left: 115px;
+        font-size: 10px;
+    }
+    .grid__locales{
+        margin-top: 25px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    
+        justify-content: center;
+        align-content: center;
+
+        &__item{
+            border: solid 3px $color-oscuro;
+            border-radius: 3px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    .grid__locales__itinerario{
+        height: 85px;
+        background-color: $color-principal;
+        font-weight: bold;
+        font-size: 15px;
+    }
+    .grid__locales__dias{
+        height: 50px;
+        background-color: $color-claro;
+        font-style: italic;
+        font-size: 10px;
+    }
+    .grid__locales__telefono{
+        margin-top: 20px;
+        background-color: $color-secundario;
+        font-weight: bold;
+        font-size: 10px;
+    }
+    .mapa__locales{
+        width: 300px;
+        height: 150px;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+    .boton__locales{
+        height: 50px;
+        width: 200px;
+        font-size: 20px;
+    }
+}
