@@ -5,3 +5,18 @@
     justify-content: center;
     align-items: center;
 }
+
+
+/* Mixins */
+
+@mixin titulo ($bgColor, $textColor){
+    background-color: $bgColor;
+    width: fit-content;
+    margin: 0 auto;
+    color: $textColor;
+    font-size: 40px;
+    text-decoration: underline;
+    border-radius: 20px;
+    font-style: oblique;
+    font-family: 'Pacifico', cursive;
+}
