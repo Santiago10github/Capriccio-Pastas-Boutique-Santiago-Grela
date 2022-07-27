@@ -6,9 +6,7 @@
 .conocenos__locales{
     width: 100%;
     height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %Flexbox;
 
     div{
         margin-top: 100px;
@@ -18,9 +16,7 @@
         border-radius: 10px;
         font-size: 25px;
         font-weight: bold;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @extend %Flexbox;
         transition: all 2s;
 
         &:hover{
@@ -89,9 +85,7 @@
     &__item{
         border: solid 3px $color-oscuro;
         border-radius: 3px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @extend %Flexbox;
     }
 }
 
@@ -145,9 +139,7 @@
         display: none;
     }
     .section__locales{
-        display: flex;
         flex-direction: column;
-        justify-content: center;
         height: 300vh;
         margin-top: 0px;
     }
@@ -198,9 +190,6 @@
         &__item{
             border: solid 3px $color-oscuro;
             border-radius: 3px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
         }
     }
     .grid__locales__itinerario{

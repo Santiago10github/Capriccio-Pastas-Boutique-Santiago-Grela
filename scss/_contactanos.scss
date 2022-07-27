@@ -11,9 +11,7 @@
     align-content: center;
 
     &__item{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @extend %Flexbox;
         height: 300px;
     }
 }
@@ -45,9 +43,7 @@
 }
 
 .botones__formulario{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %Flexbox;
 }
 
 .collapse__contactanos{
@@ -62,10 +58,8 @@
 }
 
 .card-body{
+    @extend %Flexbox;
     height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-size: 18px;
 }
 
@@ -157,9 +151,6 @@
         margin-top: 50px;
 
         &__item{
-            display: flex;
-            justify-content: center;
-            align-items: center;
             height: 150px;
             width: 320px;
         }

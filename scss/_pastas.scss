@@ -14,10 +14,8 @@
     margin-bottom: 100px;
 
     &__item{
-        display: flex;
+        @extend %Flexbox;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
     }
 
     img{
