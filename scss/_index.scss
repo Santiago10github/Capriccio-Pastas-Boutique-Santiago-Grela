@@ -29,12 +29,9 @@
 }
 
 .h2__index{
-    background-color: $color-claro;
-    width: fit-content;
-    color: $color-principal;
+    @include titulo2 ($color-claro, $color-principal, fit-content, 10px);
     font-size: 30px;
     border: solid 5px $color-oscuro;
-    border-radius: 10px;
 }
 
 .div__texto__index{

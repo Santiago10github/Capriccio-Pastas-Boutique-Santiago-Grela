@@ -17,12 +17,9 @@
 }
 
 .h2__contactanos{
-    color: $color-claro;
-    width: 300px;
+    @include titulo2 (#ffcaca99, $color-claro, 300px, 5px);
     margin-top: 50px;
-    background-color: #ffcaca99;
     border: solid 3px $color-claro;
-    border-radius: 5px;
 }
 
 .formulario{

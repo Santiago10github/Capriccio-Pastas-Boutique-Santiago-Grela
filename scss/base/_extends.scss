@@ -20,3 +20,10 @@
     font-style: oblique;
     font-family: 'Pacifico', cursive;
 }
+
+@mixin titulo2 ($bgColor, $textColor, $width, $borderRadius){
+    background-color: $bgColor;
+    color: $textColor;
+    width: $width;
+    border-radius: $borderRadius;
+}

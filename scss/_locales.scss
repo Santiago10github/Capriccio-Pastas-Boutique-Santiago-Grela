@@ -50,10 +50,8 @@
 }
 
 .h2__locales{
-    width: fit-content;
-    background-color: $color-claro;
+    @include titulo2 ($color-claro, $color-oscuro, fit-content, 10px);
     border: solid 3px $color-oscuro;
-    border-radius: 10px;
     margin: 15px auto;
 }
 

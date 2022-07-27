@@ -73,11 +73,11 @@ h1 {
 
 .h2__index {
   background-color: #fff;
-  width: fit-content;
   color: #ffcaca;
+  width: fit-content;
+  border-radius: 10px;
   font-size: 30px;
-  border: solid 5px #000;
-  border-radius: 10px; }
+  border: solid 5px #000; }
 
 .div__texto__index {
   background-color: #fff;
@@ -292,10 +292,11 @@ h1 {
   border: dotted 10px #ffcaca; }
 
 .h2__locales {
-  width: fit-content;
   background-color: #fff;
-  border: solid 3px #000;
+  color: #000;
+  width: fit-content;
   border-radius: 10px;
+  border: solid 3px #000;
   margin: 15px auto; }
 
 .h3__locales {
@@ -438,10 +439,11 @@ h1 {
   background: linear-gradient(0deg, #fffaca 10%, #78a0ff 75%); }
 
 .h2__nosotros {
-  width: fit-content;
   background-color: #fff;
-  border: solid 2px #000;
+  color: #000;
+  width: fit-content;
   border-radius: 10px;
+  border: solid 2px #000;
   text-decoration: underline;
   margin-top: 30px;
   margin-left: 15px; }
@@ -559,12 +561,12 @@ h1 {
     height: 300px; }
 
 .h2__contactanos {
+  background-color: #ffcaca99;
   color: #fff;
   width: 300px;
+  border-radius: 5px;
   margin-top: 50px;
-  background-color: #ffcaca99;
-  border: solid 3px #fff;
-  border-radius: 5px; }
+  border: solid 3px #fff; }
 
 .formulario {
   background-color: #ffffff99;
