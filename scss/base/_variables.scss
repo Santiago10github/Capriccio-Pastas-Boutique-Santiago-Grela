@@ -1,5 +1,15 @@
+/* Variable de colores */
+
 $color-principal: #ffcaca;
 $color-secundario: #ffff00;
 $color-header: #50505085;
 $color-oscuro: #000;
 $color-claro: #fff;
+
+
+/* Map de font size */
+
+$fontsize: (
+    "size-titulo": 50px,
+    "size-subtitulo": 30px
+);

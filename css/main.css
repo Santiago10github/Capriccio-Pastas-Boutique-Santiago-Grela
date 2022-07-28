@@ -1,3 +1,5 @@
+/* Variable de colores */
+/* Map de font size */
 /* Extends */
 .grid__index__item, .grid__pastas__item, .conocenos__locales, .conocenos__locales div, .grid__locales__item, .section__info__nosotros, .grid__contactanos__item, .botones__formulario, .card-body {
   display: flex;
@@ -17,11 +19,11 @@ h1 {
   width: fit-content;
   margin: 0 auto;
   color: #000;
-  font-size: 40px;
   text-decoration: underline;
   border-radius: 20px;
   font-style: oblique;
-  font-family: 'Pacifico', cursive; }
+  font-family: 'Pacifico', cursive;
+  font-size: 50px; }
 
 .navbar {
   width: 100%;

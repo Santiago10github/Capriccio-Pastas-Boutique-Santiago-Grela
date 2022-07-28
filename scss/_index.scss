@@ -30,7 +30,7 @@
 
 .h2__index{
     @include titulo2 ($color-claro, $color-principal, fit-content, 10px);
-    font-size: 30px;
+    font-size: map-get($fontsize, "size-subtitulo");
     border: solid 5px $color-oscuro;
 }
 
